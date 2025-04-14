@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+// import { ChevronLeft, ChevronRight } from 'lucide-react';
 import S1 from '../assets/s1.jpg';
 import S2 from '../assets/s2.jpg';
 import S3 from '../assets/s3.jpg';
@@ -15,9 +15,9 @@ const Hero = () => {
     setCurrentIndex((prev) => (prev + 1) % images.length);
   };
 
-  const prevSlide = () => {
-    setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
-  };
+  // const prevSlide = () => {
+  //   setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
+  // };
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -64,7 +64,7 @@ const Hero = () => {
             <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent z-10" />
 
             {/* Navigation Arrows */}
-            <button
+            {/* <button
                 onClick={prevSlide}
                 className="absolute left-4 top-1/2 z-20 -translate-y-1/2 bg-white/90 hover:bg-white text-blue-700 p-2 rounded-full shadow-lg transition duration-300"
             >
@@ -75,10 +75,10 @@ const Hero = () => {
                 className="absolute right-4 top-1/2 z-20 -translate-y-1/2 bg-white/90 hover:bg-white text-blue-700 p-2 rounded-full shadow-lg transition duration-300"
             >
                 <ChevronRight className="w-6 h-6" />
-            </button>
+            </button> */}
 
             {/* Dots */}
-            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-20 flex gap-2">
+            {/* <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-20 flex gap-2">
                 {images.map((_, index) => (
                 <div
                     key={index}
@@ -88,7 +88,7 @@ const Hero = () => {
                     }`}
                 ></div>
                 ))}
-            </div>
+            </div> */}
         </div>
       </div>
     </>
