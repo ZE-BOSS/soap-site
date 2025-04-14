@@ -32,11 +32,11 @@ const Contact = () => {
   };
 
   return (
-    <div className="bg-blue-50 px-4 py-12">
-      <div className="max-w-3xl mx-auto p-8 space-y-8">
+    <div className="bg-blue-50 md:px-4 py-12">
+      <div className="max-w-4xl md:max-w-3xl mx-auto p-2 md:p-8 space-y-8">
         <div className="text-center">
-          <h3 className="text-3xl font-extrabold text-blue-800">Get In Touch</h3>
-          <p className="mt-2 text-gray-600">Have questions or bulk orders? We’re here to help.</p>
+          <h3 className="text-xl md:text-3xl font-extrabold text-blue-800">Get In Touch</h3>
+          <p className="mt-2 text-sm md:text-lg text-gray-600">Have questions or bulk orders? We’re here to help.</p>
         </div>
 
         {/* Contact Form */}

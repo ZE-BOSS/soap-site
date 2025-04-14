@@ -12,11 +12,11 @@ function App() {
     <div className="font-sans">
       <Navbar />
       <Hero />
-      <div className="grid grid-cols-1 md:grid-cols-2">
+      <div className="grid grid-cols-2">
         <About />
         <Ingredients />
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2">
+      <div className="grid grid-cols-2">
         <FAQ />
         <Contact />
       </div>

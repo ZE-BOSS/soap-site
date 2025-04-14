@@ -9,26 +9,26 @@ const FAQ = () => {
   };
 
   return (
-    <div className="bg-white py-12 px-6 md:px-16 text-gray-800">
+    <div className="bg-white py-12 px-2 md:px-16 text-gray-800">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl font-bold text-blue-700 mb-8">
+        <h2 className="text-xl md:text-3xl font-bold text-blue-700 mb-8">
           Frequently Asked Questions (FAQ)
         </h2>
 
-        <div className="space-y-6 text-lg leading-relaxed h-[37rem] overflow-scroll">
+        <div className="space-y-6 text-md md:text-lg leading-relaxed h-[37rem] overflow-scroll">
           {faqData.map((faq, index) => (
-            <div key={index}>
+            <div key={index} className={open == index? `bg-blue-50` : ``}>
               <div 
                 className="flex items-center justify-between cursor-pointer hover:bg-blue-50 p-4 rounded-lg transition-all"
                 onClick={() => toggleAnswer(index)}
               >
-                <h3 className="font-semibold text-xl text-gray-800">{faq.question}</h3>
+                <h3 className="font-semibold text-lg md:text-xl text-gray-800">{faq.question}</h3>
                 <div className="text-blue-600">
                   {open === index ? <ChevronUp className="w-5 h-5" /> : <ChevronDown className="w-5 h-5" />}
                 </div>
               </div>
               {open === index && (
-                <div className="p-4 ml-4 bg-blue-50 rounded-lg shadow-md text-gray-700">
+                <div className="p-2 md:p-4 md:ml-4 bg-blue-50 rounded-lg shadow-md text-gray-700">
                   {faq.answer}
                 </div>
               )}

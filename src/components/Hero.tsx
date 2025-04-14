@@ -29,10 +29,10 @@ const Hero = () => {
 
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-2">
+      <div className="grid grid-cols-2">
         {/* Text Content */}
-        <div className="p-10 lg:p-16 flex flex-col justify-center bg-white max-w-2xl mx-auto space-y-6">
-            <h1 className="text-4xl font-extrabold leading-tight text-gray-900">
+        <div className="p-2 md:p-10 lg:p-16 flex flex-col justify-center bg-white max-w-2xl mx-auto space-y-6">
+            <h1 className="text-2xl md:text-4xl font-extrabold leading-tight text-gray-900">
                 Experience the Magic of <br />
                 <span className="text-blue-700 drop-shadow-sm">Wenwaw Liquid Soap</span>
             </h1>
@@ -41,18 +41,18 @@ const Hero = () => {
                 One Drop Does The Magic – <span className="text-gray-800 font-medium">Powerful Cleaning, Gentle on Your Hands.</span>
             </p>
 
-            <div className="flex gap-4 mt-4">
+            <div className="md:flex gap-4 mt-4">
                 <button className="bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded-full text-base font-semibold shadow-md transition-all duration-300">
                     Shop Now
                 </button>
-                <button className="border border-blue-700 text-blue-700 hover:bg-blue-50 px-6 py-3 rounded-full text-base font-semibold transition-all duration-300">
+                <button className="border mt-4 md:mt-0 border-blue-700 text-blue-700 hover:bg-blue-50 px-6 py-3 rounded-full text-base font-semibold transition-all duration-300">
                     Learn More
                 </button>
             </div>
         </div>
 
         {/* Carousel */}
-        <div className="relative h-[32rem] w-full overflow-hidden shadow-lg group bg-gradient-to-br from-blue-50 to-white">
+        <div className="relative h-[25rem] md:h-[32rem] w-full overflow-hidden shadow-lg group bg-gradient-to-br from-blue-50 to-white">
             {/* Image Slide */}
             <img
                 src={images[currentIndex]}

@@ -2,7 +2,6 @@ import React from 'react';
 import {
   Droplet,
   Sparkles,
-  Flower,
   Beaker,
   Flame,
   Palette,
@@ -57,10 +56,10 @@ const ingredientData = [
 
 const Ingredients = () => {
   return (
-    <div className="p-8 bg-white">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold mb-4 text-blue-700 text-center">What’s Inside Wenwaw?</h2>
-        <p className="text-gray-600 text-center mb-10 max-w-2xl mx-auto">
+    <div className="p-4 md:p-8 bg-white">
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-2xl md:text-4xl font-bold mb-4 text-blue-700 text-center">What’s Inside Wenwaw?</h2>
+        <p className="text-gray-600 text-center mb-10 max-w-3xl md:max-w-2xl mx-auto">
           Every ingredient in Wenwaw Liquid Soap is carefully chosen — for cleansing, lathering, preserving freshness, or adding that signature tropical scent.
         </p>
 
@@ -68,12 +67,12 @@ const Ingredients = () => {
           {ingredientData.map((item, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl shadow-md p-6 flex items-start gap-4 hover:shadow-lg transition-shadow duration-300"
+              className="bg-white rounded-2xl shadow-md p-4 md:p-6 md:flex items-start gap-4 hover:shadow-lg transition-shadow duration-300"
             >
               <div className="flex-shrink-0">{item.icon}</div>
               <div>
-                <h3 className="text-lg font-semibold text-gray-800">{item.title}</h3>
-                <p className="text-sm text-gray-600 mt-1">{item.description}</p>
+                <h3 className="text-md md:text-lg font-semibold text-gray-800">{item.title}</h3>
+                <p className="text-xs md:text-sm text-gray-600 mt-1">{item.description}</p>
               </div>
             </div>
           ))}
