@@ -270,41 +270,70 @@ function App() {
       {/* Contact Section */}
       <section id="contact" className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Get In Touch</h2>
-          <div className="max-w-xl mx-auto">
-            <div className="space-y-4">
-              <button className="w-full bg-green-500 text-white py-3 rounded-md flex items-center justify-center gap-2 hover:bg-green-600 transition">
+          <h2 className="text-3xl font-bold text-center mb-8">Contact Us</h2>
+          
+          <div className="max-w-2xl mx-auto space-y-8">
+            <form
+              action="mailto:seller@example.com"
+              method="POST"
+              encType="text/plain"
+              className="space-y-4"
+            >
+              <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                className="w-full p-3 border border-gray-300 rounded-md"
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                className="w-full p-3 border border-gray-300 rounded-md"
+                required
+              />
+              <textarea
+                name="message"
+                rows={5}
+                placeholder="Your Message"
+                className="w-full p-3 border border-gray-300 rounded-md"
+                required
+              ></textarea>
+              <button
+                type="submit"
+                className="bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition"
+              >
+                Send Message
+              </button>
+            </form>
+
+            {/* Quick Contact Buttons */}
+            <div className="flex justify-center gap-6 mt-6">
+              {/* WhatsApp */}
+              <a
+                href="https://wa.me/2348012345678?text=Hi%20there!%20I'm%20interested%20in%20Wenwaw%20Liquid%20Soap"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-green-600 border border-green-600 px-5 py-2 rounded-md hover:bg-green-50"
+              >
                 <MessageSquare className="w-5 h-5" />
                 Chat on WhatsApp
-              </button>
-              <button className="w-full bg-gray-700 text-white py-3 rounded-md flex items-center justify-center gap-2 hover:bg-gray-800 transition">
+              </a>
+
+              {/* Direct Email */}
+              <a
+                href="mailto:seller@example.com?subject=Inquiry%20about%20Wenwaw%20Soap"
+                className="flex items-center gap-2 text-blue-600 border border-blue-600 px-5 py-2 rounded-md hover:bg-blue-50"
+              >
                 <Mail className="w-5 h-5" />
-                Email Us
-              </button>
-              <form className="space-y-4 mt-6">
-                <input
-                  type="text"
-                  placeholder="Your Name"
-                  className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
-                <input
-                  type="email"
-                  placeholder="Your Email"
-                  className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
-                <textarea
-                  placeholder="Your Message"
-                  rows={4}
-                  className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
-                <button className="w-full bg-blue-600 text-white py-3 rounded-md hover:bg-blue-700 transition">
-                  Send Message
-                </button>
-              </form>
+                Send Email
+              </a>
             </div>
           </div>
         </div>
       </section>
+
 
       <footer className="bg-gray-800 text-white py-8">
         <div className="container mx-auto px-4 text-center">
