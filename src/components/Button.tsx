@@ -13,7 +13,7 @@ const Button = ({ children, onClick, className = "" }: ButtonProps) => {
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
       onClick={onClick}
-      className={`px-2 py-2 md:px-6 md:py-3 rounded-2xl text-white font-semibold shadow-md transition duration-300 ${className}`}
+      className={`px-2 py-2 md:px-6 md:py-3 rounded-2xl font-semibold shadow-md transition duration-300 ${className}`}
     >
       {children}
     </motion.button>

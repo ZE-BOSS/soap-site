@@ -44,7 +44,7 @@ const Hero = () => {
                 <li>✔️ Refreshing Scents</li>
               </ul>
               <div className="flex gap-2 md:gap-4 mt-4">
-                <Button className='text-xs bg-blue-400 rounded-xl md:w-60 md:py-3'>Order Now</Button>
+                <Button className='text-xs bg-blue-400 rounded-xl text-white md:w-60 md:py-3'>Order Now</Button>
                 <Button className='text-xs border border-blue-400 bg-white text-black rounded-xl md:w-60 md:py-3'>Learn More</Button>
               </div>
             </div>
