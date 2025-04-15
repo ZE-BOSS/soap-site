@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
-// import { ChevronLeft, ChevronRight } from 'lucide-react';
-import S1 from '../assets/fkimg/wenwaw1.png';
-import S2 from '../assets/fkimg/wenwaw2.png';
-import S3 from '../assets/fkimg/wenwaw3.png';
-import S4 from '../assets/fkimg/wenwaw4.png';
-import S5 from '../assets/fkimg/wenwaw5.png';
 import Button from './Button';
 
-const images = [S1, S2, S3, S4, S5];
+const images = [
+  "/assets/wenwaw1.png", 
+  "/assets/wenwaw2.png", 
+  "/assets/wenwaw3.png", 
+  "/assets/wenwaw4.png", 
+  "/assets/wenwaw5.png"
+];
 
 const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -32,7 +32,7 @@ const Hero = () => {
     <>
       <div>
         <div className="grid grid-cols-2 items-center overflow-hidden">
-          <img src={images[currentIndex]} alt={`Wenwaw Liquid Soap ${currentIndex + 1}`} className="h-full w-full transition-all duration-700 ease-in-out scale-100" />
+          <img src={images[currentIndex]} alt={`Wenwaw Liquid Soap ${currentIndex + 1}`} className="h-full w-full transition-all duration-700 ease-in-out" />
           <div className='h-full flex flex-col justify-center object-cover items-center w-full bg-blue-50 py-6'>
             <div className='mx-2 md:mx-5 md:space-y-10'>
               <h2 className="text-xl md:text-6xl font-bold mb-4">Experience the Wenwaw Difference</h2>
