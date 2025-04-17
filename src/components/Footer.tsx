@@ -8,7 +8,7 @@ import {
 
 const Footer: React.FC = () => {
   return (
-    <footer className="border-t border-gray-300 text-[#1a1a1a] px-4 py-4 font-sans">
+    <footer className="border-t bg-gray-900 text-white border-gray-300 text-[#1a1a1a] px-4 py-4 font-sans">
       <div className="max-w-6xl mx-auto flex flex-col gap-4">
         {/* Navigation Links */}
         <div className="flex flex-wrap justify-center gap-4 md:gap-12 text-base font-medium">
@@ -30,7 +30,7 @@ const Footer: React.FC = () => {
         <hr className="border-t border-[#aad4c4]" />
 
         {/* Copyright */}
-        <div className="text-center text-sm text-[#3a3a3a]">
+        <div className="text-center text-sm text-gray-100">
           © 2025 <span className="font-semibold">Wenwaw</span>. All rights reserved.
         </div>
       </div>

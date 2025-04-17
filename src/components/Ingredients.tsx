@@ -16,8 +16,8 @@ const Ingredients = () => {
           <CardContent className="flex p-2 md:p-4 gap-1 md:gap-4">
             <Leaf size={90} color='lightgreen' />
             <div className='text-left'>
-              <h3 className="font-semibold">Natural Formula</h3>
-              <p className="text-sm">Made with plant-based cleansers and essential oils</p>
+              <h3 className="font-semibold">Powerful Cleaning</h3>
+              <p className="text-sm">Cuts grease, grime, and dirt easily</p>
             </div>
           </CardContent>
         </Card>
@@ -25,8 +25,8 @@ const Ingredients = () => {
           <CardContent className="flex p-2 md:p-4 gap-2 md:gap-4">
             <Feather size={70} color='lightgreen' />
             <div className='text-left'>
-              <h3 className="font-semibold">Moisturizing</h3>
-              <p className="text-sm">Enriched glycerin to prevent skin dryness</p>
+              <h3 className="font-semibold">Multipurpose Use</h3>
+              <p className="text-sm">Cleans kitchen, bathroom, laundry, car</p>
             </div>
           </CardContent>
         </Card>
@@ -34,17 +34,17 @@ const Ingredients = () => {
           <CardContent className="flex p-2 md:p-4 gap-2 md:gap-4">
             <Salad size={80} color='lightgreen' />
             <div className='text-left'>
-              <h3 className="font-semibold">Eco-Conscious</h3>
-              <p className="text-sm">Biodegradable formula & recyclable packaging</p>
+              <h3 className="font-semibold">Long-Lasting Formula</h3>
+              <p className="text-sm">One drop gives more washes</p>
             </div>
           </CardContent>
         </Card>
         <Card className='flex justify-center items-center bg-orange-50'> 
           <CardContent className="flex p-2 md:p-4 gap-2 md:gap-4">
-            <Apple size={90} color='orange' />
+            <Apple size={70} color='orange' />
             <div className='text-left'>
-              <h3 className="font-semibold">Delightful Scents</h3>
-              <p className="text-sm">Available in lavender, citrus, and more</p>
+              <h3 className="font-semibold">Eco-Friendly Ingredients</h3>
+              <p className="text-sm">Gentle, effective, and environmentally safe</p>
             </div>
           </CardContent>
         </Card>

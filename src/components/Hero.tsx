@@ -4,9 +4,7 @@ import Button from './Button';
 const images = [
   "/assets/wenwaw1.png", 
   "/assets/wenwaw2.png", 
-  "/assets/wenwaw3.png", 
-  "/assets/wenwaw4.png", 
-  "/assets/wenwaw5.png"
+  "/assets/wenwaw3.png"
 ];
 
 const Hero = () => {
@@ -37,11 +35,11 @@ const Hero = () => {
             <div className='mx-2 md:mx-5 md:space-y-10'>
               <h2 className="text-xl md:text-6xl font-bold mb-4">Experience the Wenwaw Difference</h2>
               <ul className="list-none text-xs ml-3 md:ml-20 md:text-2xl md:space-y-4">
-                <li>✔️ 98% Natural Ingredients</li>
-                <li>✔️ Dermatologically Tested</li>
-                <li>✔️ Gentle on All Skin Types</li>
-                <li>✔️ Luxurious Lather</li>
-                <li>✔️ Refreshing Scents</li>
+                <li>✔️ Sparkling Clean Results</li>
+                <li>✔️ Multipurpose Use</li>
+                <li>✔️ Economical And Long lasting</li>
+                <li>✔️ Natural inspired Formula</li>
+                <li>✔️ Tested Quality Assurance</li>
               </ul>
               <div className="flex gap-2 md:gap-4 mt-4">
                 <Button className='text-xs bg-blue-400 rounded-xl text-white md:w-60 md:py-3'>Order Now</Button>
