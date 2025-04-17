@@ -1,9 +1,9 @@
 import React from 'react';
 import {
-  Leaf,
-  Feather,
-  Apple,
-  Salad
+  WashingMachine,
+  Droplets,
+  FlaskConical,
+  Sprout
 } from 'lucide-react';
 import { Card, CardContent } from "./Card"; 
 
@@ -14,7 +14,7 @@ const Ingredients = () => {
       <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-6">
         <Card className='flex justify-center items-center bg-blue-50'> 
           <CardContent className="flex p-2 md:p-4 justify-center items-center gap-1 md:gap-4">
-            <Leaf size={90} color='lightgreen' />
+            <WashingMachine size={50} color='lightgreen' />
             <div className='text-left'>
               <h3 className="font-semibold">Powerful Cleaning</h3>
               <p className="text-xs">Cuts grease, grime, and dirt easily</p>
@@ -23,7 +23,7 @@ const Ingredients = () => {
         </Card>
         <Card className='flex justify-center items-center bg-blue-50'> 
           <CardContent className="flex p-2 justify-center items-center md:p-4 gap-2 md:gap-4">
-            <Feather size={70} color='lightgreen' />
+            <Droplets size={50} color='lightgreen' />
             <div className='text-left'>
               <h3 className="font-semibold">Multipurpose Use</h3>
               <p className="text-xs">Cleans kitchen, bathroom, laundry</p>
@@ -32,7 +32,7 @@ const Ingredients = () => {
         </Card>
         <Card className='flex justify-center items-center bg-blue-50'> 
           <CardContent className="flex p-2 justify-center items-center md:p-4 gap-2 md:gap-4">
-            <Salad size={80} color='lightgreen' />
+            <FlaskConical size={50} color='lightgreen' />
             <div className='text-left'>
               <h3 className="font-semibold">Long-Lasting Formula</h3>
               <p className="text-xs">One drop gives more washes</p>
@@ -41,7 +41,7 @@ const Ingredients = () => {
         </Card>
         <Card className='flex justify-center items-center bg-orange-50'> 
           <CardContent className="flex p-2 justify-center items-center md:p-4 gap-2 md:gap-4">
-            <Apple size={70} color='orange' />
+            <Sprout size={50} color='orange' />
             <div className='text-left'>
               <h3 className="font-semibold">Eco-Friendly Ingredients</h3>
               <p className="text-xs">Gentle, effective, and environmentally safe</p>
