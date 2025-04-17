@@ -10,7 +10,10 @@ const Navbar = () => {
                 alt={`Wenwaw Logo`}
                 className="h-10 transition-all w-10 duration-700 ease-in-out object-fill"
             />
-            <p className='text-2xl md:text-4xl text-blue-900 font-bold'>wenwaw</p>
+            <div>
+              <p className='text-2xl md:text-4xl text-blue-900 font-bold'>wenwaw</p>
+              <p className='text-xs md:text-lg text-gray-900 font-thin'>One drop, pure magic</p>
+            </div>
         </div>
       </nav>
     );
