@@ -46,9 +46,9 @@ const Hero = () => {
                   href="https://wa.me/1234567890"
                   target="_blank"
                   rel="noopener noreferrer" 
-                  className='text-xs bg-blue-400 rounded-xl text-white md:w-60 md:py-3'
+                  className='text-xs bg-blue-400 flex items-center justify-center rounded-xl text-white md:w-60 md:py-3'
                 >
-                  Order Now
+                  <p className='px-4'>Order Now</p>
                 </a>
                 <Button className='text-xs border border-blue-400 bg-white text-black rounded-xl md:w-60 md:py-3'>Learn More</Button>
               </div>
